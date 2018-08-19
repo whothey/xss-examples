@@ -1,11 +1,18 @@
 from os import getenv
-from bottle import route, request, run
+from bottle import route, request, view, run
 
 CHAT = [('Anonymous', 'Hello!')]
 
 @route('/')
+@view('static/home')
 def index():
-    return 'This is just a welcome page, please head to intended example: '
+    return {
+        'examples': {
+            '/xss/reflected': 'Reflected',
+            '/xss/persistent': 'Persistent',
+            '/xss/dom': 'DOM-XSS'
+        }
+    }
 
 
 @route('/xss/persistent')
@@ -14,8 +21,11 @@ def chat():
 
 
 @route('/xss/reflected')
+@view('static/reflected')
 def search():
-    return 'your query: ' + request.query.q;
+    return {
+        'query': request.query.q
+    }
 
 
 @route('/xss/dom')
