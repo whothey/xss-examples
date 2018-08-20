@@ -1,9 +1,9 @@
 from os import getenv
-from bottle import route, request, view, run
+from bottle import get, request, view, run
 
 CHAT = [('Anonymous', 'Hello!')]
 
-@route('/')
+@get('/')
 @view('static/home')
 def index():
     return {
@@ -15,12 +15,12 @@ def index():
     }
 
 
-@route('/xss/persistent')
+@get('/xss/persistent')
 def chat():
     return 'chat';
 
 
-@route('/xss/reflected')
+@get('/xss/reflected')
 @view('static/reflected')
 def search():
     return {
@@ -28,12 +28,12 @@ def search():
     }
 
 
-@route('/xss/dom')
+@get('/xss/dom')
 def dom():
     return 'your query?';
 
 
-@route('/xss/self')
+@get('/xss/self')
 def selfxss():
     return 'are you really going to do this?';
 
