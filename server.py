@@ -1,5 +1,5 @@
 from os import getenv
-from bottle import get, request, view, run
+from bottle import get, post, request, redirect, view, run
 
 CHAT = [('Anonymous', 'Hello!')]
 
@@ -16,8 +16,19 @@ def index():
 
 
 @get('/xss/persistent')
+@view('static/persistent')
 def chat():
-    return 'chat';
+    return { 'messages': CHAT, 'last_user': request.query.u };
+
+
+@post('/xss/persistent')
+def send_message():
+    user  = request.forms.get('user')
+    msg   = request.forms.get('message')
+    entry = (user, msg)
+    CHAT.append(entry)
+
+    return redirect('/xss/persistent?u='+user)
 
 
 @get('/xss/reflected')
