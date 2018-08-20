@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-
+% setdefault('title', 'XSS Examples')
 <html>
 <head>
-  <title>{ title or 'XSS Examples' }</title>
+  <title>{{ title }}</title>
 </head>
 
 <body>
