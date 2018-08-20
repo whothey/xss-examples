@@ -8,7 +8,7 @@
 </ol>
 
 <form action="" method="POST">
-  <input name="user" autocomplete="off" type="text" value="{{ last_user }}"/>
-  <input name="message" autocomplete="off" type="text" value="" autofocus />
+  <input name="user" autocomplete="off" type="text" placeholder="User" value="{{ last_user }}"/>
+  <input name="message" autocomplete="off" type="text" placeholder="Message" value="" autofocus/>
   <button>Send!</button>
 </form>
