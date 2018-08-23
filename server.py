@@ -44,10 +44,5 @@ def dom():
     return 'your query?';
 
 
-@get('/xss/self')
-def selfxss():
-    return 'are you really going to do this?';
-
-
 if __name__ == '__main__':
     run(host=getenv('HOST_ADDR', 'localhost'), port=getenv('PORT', 3000))
