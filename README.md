@@ -6,9 +6,11 @@ Security_ assignment @ Federal University of Fronteira Sul.
 
 [Presentation slides (PT-BR)](https://docs.google.com/presentation/d/1bZVtv9Yo--CG1FpGTHFJFHkBYEdWvMpXwy3RrIZVmxM/edit?usp=sharing)
 
-## Examples
+## Scenarios
 
-*Full list coming soon*
+ - Reflected XSS (`/xss/reflected`)
+ - Persistent XSS (`/xss/persistent`)
+ - DOM XSS (`/xss/dom`) # TODO
 
 ## Setup
 
