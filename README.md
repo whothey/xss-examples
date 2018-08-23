@@ -1,5 +1,5 @@
-XSS
-====
+XSS Examples
+=================
 
 Simple examples of XSS attacks and protections for a _Auditing and Systems
 Security_ assignment @ Federal University of Fronteira Sul.
@@ -13,6 +13,7 @@ Security_ assignment @ Federal University of Fronteira Sul.
 ### Requirements
 
  - Python 3
+ - Bottle (installed via PIP)
 
 ```sh
 $ pip install -r requirements.txt
@@ -29,4 +30,10 @@ And then:
 
 ```sh
 $ python server.py
+```
+
+Or even:
+
+```sh
+$ PORT=8000 python server.py
 ```
