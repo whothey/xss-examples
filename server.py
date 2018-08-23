@@ -4,7 +4,7 @@ from bottle import get, post, request, redirect, view, run
 CHAT = [('Anonymous', 'Hello!')]
 
 @get('/')
-@view('static/home')
+@view('views/home')
 def index():
     return {
         'examples': {
@@ -16,7 +16,7 @@ def index():
 
 
 @get('/xss/persistent')
-@view('static/persistent')
+@view('views/persistent')
 def chat():
     return { 'messages': CHAT, 'last_user': request.query.u };
 
@@ -32,7 +32,7 @@ def send_message():
 
 
 @get('/xss/reflected')
-@view('static/reflected')
+@view('views/reflected')
 def search():
     return {
         'query': request.query.q

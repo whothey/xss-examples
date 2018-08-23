@@ -1,4 +1,4 @@
-% rebase('./static/base.tpl')
+% rebase('./views/base.tpl')
 <h1>Persistent XSS</h1>
 
 <ol>

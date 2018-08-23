@@ -1,4 +1,4 @@
-% rebase('./static/base.tpl')
+% rebase('./views/base.tpl')
 <h1>Reflected XSS</h1>
 
 %if query == '':
