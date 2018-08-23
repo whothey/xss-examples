@@ -1,11 +1,12 @@
 XSS
 ====
 
-Simple examples of XSS attacks and protections for a _Auditing and Systems Security_ assignment @ Federal University of Fronteira Sul.
+Simple examples of XSS attacks and protections for a _Auditing and Systems
+Security_ assignment @ Federal University of Fronteira Sul.
 
 ## Examples
 
-*Full list comming soon*
+*Full list coming soon*
 
 ## Setup
 
@@ -24,7 +25,7 @@ You can setup the following env vars:
  - HOST_ADDR (default to 'localhost')
  - PORT (default to 3000)
  
- And then:
+And then:
 
 ```sh
 $ python server.py
