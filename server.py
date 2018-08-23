@@ -50,4 +50,4 @@ def selfxss():
 
 
 if __name__ == '__main__':
-    run(host='localhost', port=getenv('PORT', 3000))
+    run(host=getenv('HOST_ADDR', 'localhost'), port=getenv('PORT', 3000))

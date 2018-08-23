@@ -21,7 +21,7 @@ $ pip install -r requirements.txt
 
 You can setup the following env vars:
 
- - ADDR (default to 'localhost')
+ - HOST_ADDR (default to 'localhost')
  - PORT (default to 3000)
  
  And then:
