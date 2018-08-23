@@ -4,6 +4,8 @@ XSS Examples
 Simple examples of XSS attacks and protections for a _Auditing and Systems
 Security_ assignment @ Federal University of Fronteira Sul.
 
+[Presentation slides (PT-BR)](https://docs.google.com/presentation/d/1bZVtv9Yo--CG1FpGTHFJFHkBYEdWvMpXwy3RrIZVmxM/edit?usp=sharing)
+
 ## Examples
 
 *Full list coming soon*
